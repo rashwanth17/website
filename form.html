@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            background: #200122;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            /* background-color: rgb(154, 147, 138); */
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            /* margin-top: px; */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+           border-radius: 20px;
+            padding: 25px;
+            gap: 20px;
+            border: 2px solid rgb(23, 22, 22);
+            background-color: rgb(247, 247, 248);
+ 
+        }
+        .form:hover{
+            box-shadow:
+  3.6px 2.6px 2.2px rgba(0, 0, 0, 0.068),
+  8.7px 6.3px 5.3px rgba(0, 0, 0, 0.098),
+  16.4px 11.8px 10px rgba(0, 0, 0, 0.119),
+  29.3px 21px 17.9px rgba(0, 0, 0, 0.135),
+  54.7px 39.3px 33.4px rgba(0, 0, 0, 0.148),
+  131px 94px 80px rgba(0, 0, 0, 0.16)
+;
+background: #3494E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            /* background-color: rgb(214, 110, 110); */
+            border-color: #3494E6;  /* fallback for old browsers */
+            border-color: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+            border-color: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            /* border-color:  rgb(214, 110, 110);  */
+        }
+        input{
+   
+            border-radius: 5px;
+            border-color: rgb(89, 89, 151);
+        }
+        input:hover{
+            box-shadow:
+  3.6px 2.6px 2.2px rgba(0, 0, 0, 0.068),
+  8.7px 6.3px 5.3px rgba(0, 0, 0, 0.098),
+  16.4px 11.8px 10px rgba(0, 0, 0, 0.119),
+  29.3px 21px 17.9px rgba(0, 0, 0, 0.135),
+  54.7px 39.3px 33.4px rgba(0, 0, 0, 0.148),
+  131px 94px 80px rgba(0, 0, 0, 0.16);
+  border-color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form action="">
+            <label for="name">ENTER YOUR NAME</label><br>
+            <input type="text" id="name"><br><br>
+            <label for="email">ENTER YOUR EMAIL</label><br>
+            <input type="email" id="email"><br><br>
+            <label for="phn">ENTER YOUR PHONE NUMBER</label><br>
+            <input type="number" id="phn">
+            <button type="button" id="submit">Submit</button>
+        </form>
+    </div>
+    <p id="result"></p>
+    <script src="form.js"></script>
+    <script>
+        let data1=[1,2,3,4];
+        let data2=['a','b','c'];
+        let data=[...data1,...data2];
+        console.log(data);
+    </script>
+</body>
+
+</html>
