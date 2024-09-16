@@ -62,6 +62,9 @@ background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, F
   131px 94px 80px rgba(0, 0, 0, 0.16);
   border-color:white;
         }
+        p{
+            color: aliceblue;
+        }
     </style>
 </head>
 <body>
@@ -72,18 +75,27 @@ background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, F
             <label for="email">ENTER YOUR EMAIL</label><br>
             <input type="email" id="email"><br><br>
             <label for="phn">ENTER YOUR PHONE NUMBER</label><br>
-            <input type="number" id="phn">
+            <input type="number" id="phn"><br><br>
+            <label for="age">ENTER YOUR AGE</label><br>
+            <input type="number" id="age"><br>
             <button type="button" id="submit">Submit</button>
         </form>
     </div>
     <p id="result"></p>
     <script src="form.js"></script>
-    <script>
+    <!-- <script>
         let data1=[1,2,3,4];
         let data2=['a','b','c'];
         let data=[...data1,...data2];
-        console.log(data);
-    </script>
+        const data3={
+            username:name
+        }
+        console.log(data1.username);
+        const f1=()=>{
+    console.log("f7");
+}
+f1();
+    </script> -->
 </body>
 
 </html>
